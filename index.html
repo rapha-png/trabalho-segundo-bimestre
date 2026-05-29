@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projeto Completo - Exercícios JavaScript</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Projeto Completo JavaScript</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>1. Encontre o Triângulo</h2>
+
+<input type="number" id="x" placeholder="Lado X">
+<input type="number" id="y" placeholder="Lado Y">
+<input type="number" id="z" placeholder="Lado Z">
+
+<button onclick="triangulo()">Verificar</button>
+
+<div class="resultado" id="resTriangulo"></div>
+</div>
+
+<div class="card">
+<h2>2. Calculadora IMC</h2>
+
+<input type="number" id="peso" placeholder="Peso (kg)">
+<input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+
+<button onclick="imc()">Calcular IMC</button>
+
+<div class="resultado" id="resImc"></div>
+</div>
+
+<div class="card">
+<h2>3. Calculadora de Impostos</h2>
+
+<input type="number" id="ano" placeholder="Ano do carro">
+<input type="number" id="valorCarro" placeholder="Valor do carro">
+
+<button onclick="imposto()">Calcular Imposto</button>
+
+<div class="resultado" id="resImposto"></div>
+</div>
+
+<div class="card">
+<h2>4. Calculadora de Salário</h2>
+
+<input type="number" id="salario" placeholder="Salário atual">
+
+<select id="cargo">
+<option value="gerente">Gerente</option>
+<option value="engenheiro">Engenheiro</option>
+<option value="tecnico">Técnico</option>
+<option value="outro">Outro</option>
+</select>
+
+<button onclick="salarioNovo()">Calcular</button>
+
+<div class="resultado" id="resSalario"></div>
+</div>
+
+<div class="card">
+<h2>5. Crédito Bancário</h2>
+
+<input type="number" id="saldo" placeholder="Saldo médio">
+
+<button onclick="credito()">Calcular Crédito</button>
+
+<div class="resultado" id="resCredito"></div>
+</div>
+
+<div class="card">
+<h2>6. Lanchonete</h2>
+
+<select id="lanche">
+<option value="11">11 - Cachorro Quente - R$10</option>
+<option value="12">12 - X-Salada - R$15</option>
+<option value="13">13 - X-Bacon - R$18</option>
+<option value="14">14 - Bauru - R$12</option>
+<option value="15">15 - Refrigerante - R$5</option>
+</select>
+
+<input type="number" id="quantidade" placeholder="Quantidade">
+
+<button onclick="pedido()">Calcular Pedido</button>
+
+<div class="resultado" id="resPedido"></div>
+</div>
+
+<div class="card">
+<h2>7. Sistema de Vendas</h2>
+
+<input type="number" id="valorProduto" placeholder="Valor do produto">
+
+<select id="pagamento">
+<option value="a">À vista dinheiro/cheque</option>
+<option value="b">À vista cartão</option>
+<option value="c">2x sem juros</option>
+<option value="d">2x com juros</option>
+</select>
+
+<button onclick="vendas()">Calcular</button>
+
+<div class="resultado" id="resVenda"></div>
+</div>
+
+<div class="card">
+<h2>8. Sistema de Pagamentos</h2>
+
+<select id="nivel">
+<option value="1">Professor Nível 1</option>
+<option value="2">Professor Nível 2</option>
+<option value="3">Professor Nível 3</option>
+</select>
+
+<input type="number" id="horas" placeholder="Horas por semana">
+
+<button onclick="professor()">Calcular Salário</button>
+
+<div class="resultado" id="resProfessor"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
