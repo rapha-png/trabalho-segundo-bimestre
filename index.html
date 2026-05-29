@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Projeto Completo - Exercícios JavaScript</title>
+<title>Projeto Completo </title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,125 +12,394 @@
 
 <body>
 
-<h1>Projeto Completo JavaScript</h1>
+<header>
+<h1>Projeto Completo - Exercícios </h1>
+<p>HTML + CSS + JavaScript</p>
+</header>
 
-<div class="container">
+EXERCÍCIO 1
+<section class="box">
 
-<div class="card">
 <h2>1. Encontre o Triângulo</h2>
 
-<input type="number" id="x" placeholder="Lado X">
-<input type="number" id="y" placeholder="Lado Y">
-<input type="number" id="z" placeholder="Lado Z">
+<input type="number" id="lado1" placeholder="Lado X">
+<input type="number" id="lado2" placeholder="Lado Y">
+<input type="number" id="lado3" placeholder="Lado Z">
 
-<button onclick="triangulo()">Verificar</button>
+<button onclick="verificarTriangulo()">
+Verificar
+</button>
 
-<div class="resultado" id="resTriangulo"></div>
-</div>
+<p id="resultadoTriangulo"></p>
 
-<div class="card">
+</section>
+
+ EXERCÍCIO 2 
+<section class="box">
+
 <h2>2. Calculadora IMC</h2>
 
 <input type="number" id="peso" placeholder="Peso (kg)">
+
 <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
 
-<button onclick="imc()">Calcular IMC</button>
+<button onclick="calcularIMC()">
+Calcular IMC
+</button>
 
-<div class="resultado" id="resImc"></div>
-</div>
+<p id="resultadoIMC"></p>
 
-<div class="card">
+</section>
+
+ EXERCÍCIO 3 
+<section class="box">
+
 <h2>3. Calculadora de Impostos</h2>
 
-<input type="number" id="ano" placeholder="Ano do carro">
+<input type="number" id="anoCarro" placeholder="Ano do carro">
+
 <input type="number" id="valorCarro" placeholder="Valor do carro">
 
-<button onclick="imposto()">Calcular Imposto</button>
+<button onclick="calcularImposto()">
+Calcular Imposto
+</button>
 
-<div class="resultado" id="resImposto"></div>
-</div>
+<p id="resultadoImposto"></p>
 
-<div class="card">
+</section>
+
+EXERCÍCIO 4 
+<section class="box">
+
 <h2>4. Calculadora de Salário</h2>
 
 <input type="number" id="salario" placeholder="Salário atual">
 
 <select id="cargo">
+
 <option value="gerente">Gerente</option>
+
 <option value="engenheiro">Engenheiro</option>
+
 <option value="tecnico">Técnico</option>
+
 <option value="outro">Outro</option>
+
 </select>
 
-<button onclick="salarioNovo()">Calcular</button>
+<button onclick="calcularSalario()">
+Calcular Novo Salário
+</button>
 
-<div class="resultado" id="resSalario"></div>
-</div>
+<p id="resultadoSalario"></p>
 
-<div class="card">
+</section>
+
+ EXERCÍCIO 5 
+<section class="box">
+
 <h2>5. Crédito Bancário</h2>
 
 <input type="number" id="saldo" placeholder="Saldo médio">
 
-<button onclick="credito()">Calcular Crédito</button>
+<button onclick="calcularCredito()">
+Calcular Crédito
+</button>
 
-<div class="resultado" id="resCredito"></div>
-</div>
+<p id="resultadoCredito"></p>
 
-<div class="card">
+</section>
+
+ EXERCÍCIO 6 
+<section class="box">
+
 <h2>6. Lanchonete</h2>
 
 <select id="lanche">
-<option value="11">11 - Cachorro Quente - R$10</option>
-<option value="12">12 - X-Salada - R$15</option>
-<option value="13">13 - X-Bacon - R$18</option>
-<option value="14">14 - Bauru - R$12</option>
-<option value="15">15 - Refrigerante - R$5</option>
+
+<option value="10">Cachorro Quente - R$10</option>
+
+<option value="12">X-Burguer - R$12</option>
+
+<option value="15">X-Salada - R$15</option>
+
+<option value="18">Refrigerante - R$18</option>
+
 </select>
 
 <input type="number" id="quantidade" placeholder="Quantidade">
 
-<button onclick="pedido()">Calcular Pedido</button>
+<button onclick="calcularLanche()">
+Calcular Pedido
+</button>
 
-<div class="resultado" id="resPedido"></div>
-</div>
+<p id="resultadoLanche"></p>
 
-<div class="card">
+</section>
+
+ EXERCÍCIO 7 
+<section class="box">
+
 <h2>7. Sistema de Vendas</h2>
 
 <input type="number" id="valorProduto" placeholder="Valor do produto">
 
 <select id="pagamento">
+
 <option value="a">À vista dinheiro/cheque</option>
+
 <option value="b">À vista cartão</option>
+
 <option value="c">2x sem juros</option>
+
 <option value="d">2x com juros</option>
+
 </select>
 
-<button onclick="vendas()">Calcular</button>
+<button onclick="calcularVenda()">
+Calcular Valor
+</button>
 
-<div class="resultado" id="resVenda"></div>
-</div>
+<p id="resultadoVenda"></p>
 
-<div class="card">
+</section>
+
+EXERCÍCIO 8 
+<section class="box">
+
 <h2>8. Sistema de Pagamentos</h2>
 
 <select id="nivel">
-<option value="1">Professor Nível 1</option>
-<option value="2">Professor Nível 2</option>
-<option value="3">Professor Nível 3</option>
+
+<option value="12">Professor Nível 1</option>
+
+<option value="17">Professor Nível 2</option>
+
+<option value="25">Professor Nível 3</option>
+
 </select>
 
 <input type="number" id="horas" placeholder="Horas por semana">
 
-<button onclick="professor()">Calcular Salário</button>
+<button onclick="calcularProfessor()">
+Calcular Salário
+</button>
 
-<div class="resultado" id="resProfessor"></div>
-</div>
+<p id="resultadoProfessor"></p>
 
-</div>
+</section>
 
-<script src="script.js"></script>
+<script>
+
+function verificarTriangulo(){
+
+let x = Number(document.getElementById("lado1").value);
+let y = Number(document.getElementById("lado2").value);
+let z = Number(document.getElementById("lado3").value);
+
+if(x < y + z && y < x + z && z < x + y){
+
+if(x === y && y === z){
+document.getElementById("resultadoTriangulo").innerHTML =
+"Triângulo Equilátero";
+}
+
+else if(x === y || x === z || y === z){
+document.getElementById("resultadoTriangulo").innerHTML =
+"Triângulo Isósceles";
+}
+
+else{
+document.getElementById("resultadoTriangulo").innerHTML =
+"Triângulo Escaleno";
+}
+
+}
+
+else{
+document.getElementById("resultadoTriangulo").innerHTML =
+"Não forma um triângulo";
+}
+
+}
+
+function calcularIMC(){
+
+let peso = Number(document.getElementById("peso").value);
+
+let altura = Number(document.getElementById("altura").value);
+
+let imc = peso / (altura * altura);
+
+let texto = "";
+
+if(imc < 18.5){
+texto = "Abaixo do peso";
+}
+
+else if(imc < 25){
+texto = "Peso normal";
+}
+
+else if(imc < 30){
+texto = "Sobrepeso";
+}
+
+else if(imc < 35){
+texto = "Obesidade grau 1";
+}
+
+else if(imc < 40){
+texto = "Obesidade grau 2";
+}
+
+else{
+texto = "Obesidade grau 3";
+}
+
+document.getElementById("resultadoIMC").innerHTML =
+"IMC: " + imc.toFixed(2) + " - " + texto;
+
+}
+
+function calcularImposto(){
+
+let ano = Number(document.getElementById("anoCarro").value);
+
+let valor = Number(document.getElementById("valorCarro").value);
+
+let imposto;
+
+if(ano < 1990){
+imposto = valor * 0.01;
+}
+
+else{
+imposto = valor * 0.015;
+}
+
+document.getElementById("resultadoImposto").innerHTML =
+"Imposto: R$ " + imposto.toFixed(2);
+
+}
+
+function calcularSalario(){
+
+let salario = Number(document.getElementById("salario").value);
+
+let cargo = document.getElementById("cargo").value;
+
+let aumento;
+
+switch(cargo){
+
+case "gerente":
+aumento = 0.10;
+break;
+
+case "engenheiro":
+aumento = 0.20;
+break;
+
+case "tecnico":
+aumento = 0.30;
+break;
+
+default:
+aumento = 0.40;
+
+}
+
+let novo = salario + (salario * aumento);
+
+document.getElementById("resultadoSalario").innerHTML =
+"Novo salário: R$ " + novo.toFixed(2);
+
+}
+
+function calcularCredito(){
+
+let saldo = Number(document.getElementById("saldo").value);
+
+let credito;
+
+if(saldo <= 200){
+credito = 0;
+}
+
+else if(saldo <= 400){
+credito = saldo * 0.20;
+}
+
+else if(saldo <= 600){
+credito = saldo * 0.30;
+}
+
+else{
+credito = saldo * 0.40;
+}
+
+document.getElementById("resultadoCredito").innerHTML =
+"Crédito: R$ " + credito.toFixed(2);
+
+}
+
+function calcularLanche(){
+
+let valor = Number(document.getElementById("lanche").value);
+
+let qtd = Number(document.getElementById("quantidade").value);
+
+let total = valor * qtd;
+
+document.getElementById("resultadoLanche").innerHTML =
+"Total: R$ " + total.toFixed(2);
+
+}
+
+function calcularVenda(){
+
+let valor = Number(document.getElementById("valorProduto").value);
+
+let codigo = document.getElementById("pagamento").value;
+
+let total;
+
+if(codigo === "a"){
+total = valor - (valor * 0.10);
+}
+
+else if(codigo === "b"){
+total = valor - (valor * 0.15);
+}
+
+else if(codigo === "c"){
+total = valor;
+}
+
+else{
+total = valor + (valor * 0.10);
+}
+
+document.getElementById("resultadoVenda").innerHTML =
+"Valor final: R$ " + total.toFixed(2);
+
+}
+
+function calcularProfessor(){
+
+let valorHora = Number(document.getElementById("nivel").value);
+
+let horas = Number(document.getElementById("horas").value);
+
+let salario = valorHora * horas * 4.5;
+
+document.getElementById("resultadoProfessor").innerHTML =
+"Salário: R$ " + salario.toFixed(2);
+
+}
+
+</script>
 
 </body>
 </html>
